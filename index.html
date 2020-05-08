@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>startNG QUIZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="quiz-container">
+
+        
+        <div class="questionNumber">
+            <div class="q-header">
+            <h3><span class="current-question"> 1 </span> of <span class="total-question"> 5 </span></h3> 
+            </div>
+            
+        </div>
+        <div class="question"></div>
+
+        <div class="option-container">
+        <div id="0" class="option1" onclick="check(this)"></div>
+        <div id="1" class="option2" onclick="check(this)"></div>
+        <div id="2" class="option3" onclick="check(this)"></div>
+        <div id="3" class="option4" onclick="check(this)"></div> 
+        </div>
+        <div class="button">
+        <button type="button" class="btn" onclick="next()">Next Question</button>
+        </div>
+        <div class="score-counter">
+            <p>
+           Score: <span class="current-score"> 0</span>
+            </p>
+        </div>
+    </div>
+    <div class="game-over">
+        <div class="end-container">
+        <h1>
+          <span class="correct-answers">  </span> / <span class="possible-score"> </span>
+        </h1>
+        <button class="butn" type="submit" onclick="startAgain()">Try Again</button>
+        </div>
+    </div>
+    <script src="mainq.js"></script>
+</body>
+
+</html>
